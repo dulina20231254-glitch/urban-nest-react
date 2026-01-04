@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/urban-nest-react/static/css/main.dd157f31.css",
-    "main.js": "/urban-nest-react/static/js/main.e55e9c80.js",
+    "main.css": "/urban-nest-react/static/css/main.71bc0a7e.css",
+    "main.js": "/urban-nest-react/static/js/main.2878c6e7.js",
     "static/js/453.fd2f0c4a.chunk.js": "/urban-nest-react/static/js/453.fd2f0c4a.chunk.js",
     "index.html": "/urban-nest-react/index.html",
-    "main.dd157f31.css.map": "/urban-nest-react/static/css/main.dd157f31.css.map",
-    "main.e55e9c80.js.map": "/urban-nest-react/static/js/main.e55e9c80.js.map",
+    "main.71bc0a7e.css.map": "/urban-nest-react/static/css/main.71bc0a7e.css.map",
+    "main.2878c6e7.js.map": "/urban-nest-react/static/js/main.2878c6e7.js.map",
     "453.fd2f0c4a.chunk.js.map": "/urban-nest-react/static/js/453.fd2f0c4a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd157f31.css",
-    "static/js/main.e55e9c80.js"
+    "static/css/main.71bc0a7e.css",
+    "static/js/main.2878c6e7.js"
   ]
 }
