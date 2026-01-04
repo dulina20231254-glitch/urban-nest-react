@@ -8,19 +8,23 @@ function App() {
   const [maxPrice, setMaxPrice] = useState("");
   const [bedrooms, setBedrooms] = useState("");
   const [postcode, setPostcode] = useState("");
+  const [startDate, setStartDate] = useState(""); // New: Date Filter [cite: 28]
   const [selectedProperty, setSelectedProperty] = useState(null);
   const [favourites, setFavourites] = useState([]);
   const [sort, setSort] = useState("");
 
   const filteredProperties = properties
     .filter(property => {
+      const propertyDate = new Date(property.dateAdded);
+      const filterDate = startDate ? new Date(startDate) : null;
+
       return (
         (type === "" || property.type === type) &&
         (minPrice === "" || property.price >= Number(minPrice)) &&
         (maxPrice === "" || property.price <= Number(maxPrice)) &&
         (bedrooms === "" || property.bedrooms >= Number(bedrooms)) &&
-        (postcode === "" ||
-          property.postcode.toLowerCase().includes(postcode.toLowerCase()))
+        (postcode === "" || property.postcode.toLowerCase().includes(postcode.toLowerCase())) &&
+        (!filterDate || propertyDate >= filterDate) // Logic for Date Filter 
       );
     })
     .sort((a, b) => {
@@ -38,6 +42,11 @@ function App() {
 
   const removeFromFavourites = (id) => {
     setFavourites(favourites.filter(fav => fav.id !== id));
+  };
+
+  // New: Clear All Favourites Logic 
+  const clearFavourites = () => {
+    setFavourites([]);
   };
 
   return (
@@ -60,89 +69,64 @@ function App() {
             <option value="Bungalow">Bungalow</option>
           </select>
 
-          <input
-            type="number"
-            placeholder="Min price"
-            value={minPrice}
-            onChange={e => setMinPrice(e.target.value)}
-          />
-
-          <input
-            type="number"
-            placeholder="Max price"
-            value={maxPrice}
-            onChange={e => setMaxPrice(e.target.value)}
-          />
-
-          <input
-            type="number"
-            placeholder="Bedrooms"
-            value={bedrooms}
-            onChange={e => setBedrooms(e.target.value)}
-          />
-
-          <input
-            type="text"
-            placeholder="Postcode"
-            value={postcode}
-            onChange={e => setPostcode(e.target.value)}
-          />
+          <input type="number" placeholder="Min price" value={minPrice} onChange={e => setMinPrice(e.target.value)} />
+          <input type="number" placeholder="Max price" value={maxPrice} onChange={e => setMaxPrice(e.target.value)} />
+          <input type="number" placeholder="Bedrooms" value={bedrooms} onChange={e => setBedrooms(e.target.value)} />
+          <input type="text" placeholder="Postcode" value={postcode} onChange={e => setPostcode(e.target.value)} />
+          
+          {/* New: Date Added Input Field [cite: 28, 76] */}
+          <div className="date-filter">
+            <label>Added after: </label>
+            <input type="date" value={startDate} onChange={e => setStartDate(e.target.value)} />
+          </div>
         </div>
       )}
 
       {selectedProperty ? (
         <div className="property-details">
           <button onClick={() => setSelectedProperty(null)}>← Back</button>
-
+          <img src={selectedProperty.image} alt="property" className="details-image" />
           <h2>{selectedProperty.type}</h2>
-          <p><strong>Price:</strong> £{selectedProperty.price}</p>
-          <p><strong>Bedrooms:</strong> {selectedProperty.bedrooms}</p>
-          <p><strong>Postcode:</strong> {selectedProperty.postcode}</p>
-          <p><strong>Date Added:</strong> {selectedProperty.dateAdded}</p>
-
-          <button
+          <p><strong>Price:</strong> £{selectedProperty.price.toLocaleString()}</p>
+          <p><strong>Description:</strong> {selectedProperty.description}</p>
+          <button 
             onClick={() => addToFavourites(selectedProperty)}
             disabled={favourites.find(fav => fav.id === selectedProperty.id)}
           >
-            {favourites.find(fav => fav.id === selectedProperty.id)
-              ? "Added ⭐"
-              : "Add to favourites ⭐"}
+            {favourites.find(fav => fav.id === selectedProperty.id) ? "Added ⭐" : "Add to favourites ⭐"}
           </button>
         </div>
       ) : (
         <>
           {favourites.length > 0 && (
             <div className="favourites">
-              <h2>⭐ Favourites</h2>
-
-              {favourites.map(property => (
-                <div key={property.id} className="property-card">
-                  <h3>{property.type}</h3>
-                  <p>£{property.price}</p>
-                  <p>{property.postcode}</p>
-
-                  <button onClick={() => removeFromFavourites(property.id)}>
-                    Remove
-                  </button>
-                </div>
-              ))}
+              <h2>⭐ Favourites ({favourites.length})</h2>
+              {/* New: Clear All Button  */}
+              <button onClick={clearFavourites} className="clear-btn">Clear All Favourites</button>
+              <div className="property-grid">
+                {favourites.map(property => (
+                  <div key={property.id} className="property-card">
+                    <h3>{property.type}</h3>
+                    <button onClick={() => removeFromFavourites(property.id)}>Remove</button>
+                  </div>
+                ))}
+              </div>
             </div>
           )}
 
           <div className="property-grid">
-            {filteredProperties.map(property => (
-              <div
-                key={property.id}
-                className="property-card"
-                onClick={() => setSelectedProperty(property)}
-              >
-                <h3>{property.type}</h3>
-                <p><strong>Price:</strong> £{property.price}</p>
-                <p><strong>Bedrooms:</strong> {property.bedrooms}</p>
-                <p><strong>Postcode:</strong> {property.postcode}</p>
-                <p><strong>Date Added:</strong> {property.dateAdded}</p>
-              </div>
-            ))}
+            {filteredProperties.length === 0 ? (
+              <p>No properties found matching your criteria.</p>
+            ) : (
+              filteredProperties.map(property => (
+                <div key={property.id} className="property-card" onClick={() => setSelectedProperty(property)}>
+                  <img src={property.image} alt="property" className="card-image" />
+                  <h3>{property.type}</h3>
+                  <p className="price">£{property.price.toLocaleString()}</p>
+                  <p>Added: {property.dateAdded}</p>
+                </div>
+              ))
+            )}
           </div>
         </>
       )}
