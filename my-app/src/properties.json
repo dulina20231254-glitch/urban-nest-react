@@ -6,7 +6,19 @@
     "bedrooms": 3,
     "postcode": "NW1",
     "dateAdded": "2024-09-12",
-    "description": "Modern family house in a quiet area"
+    "description": "Modern family house in a quiet area",
+    "longDescription": "This stunning modern family home in NW1 features a spacious open-plan living area, a newly fitted kitchen, and three generously sized bedrooms. The property benefits from a private rear garden and off-street parking.",
+    "images": [
+      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800",
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=800",
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800",
+      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800",
+      "https://images.unsplash.com/photo-1513584684374-8bdb7483fe8f?w=800",
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=800",
+      "https://images.unsplash.com/photo-1560448204-61dc36dc98b8?w=800",
+      "https://images.unsplash.com/photo-1527359443443-84a18acc6121?w=800"
+    ],
+    "floorPlan": "https://wcs.smartdraw.com/floor-plan/img/floor-plan-marketing.png"
   },
   {
     "id": 2,
@@ -15,7 +27,19 @@
     "bedrooms": 2,
     "postcode": "E1",
     "dateAdded": "2024-09-10",
-    "description": "City centre apartment close to transport"
+    "description": "City centre apartment close to transport",
+    "longDescription": "An exceptional two-bedroom flat in E1 offering bright living spaces, a contemporary bathroom, and a balcony with city views. Ideally located for professionals.",
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
+      "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=800",
+      "https://images.unsplash.com/photo-1499916078039-922301b0eb9b?w=800",
+      "https://images.unsplash.com/photo-1505691938895-1758d7eaa511?w=800",
+      "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=800",
+      "https://images.unsplash.com/photo-1493200066229-39775339377a?w=800"
+    ],
+    "floorPlan": "https://wcs.smartdraw.com/floor-plan/img/floor-plan-marketing.png"
   },
   {
     "id": 3,
@@ -24,7 +48,19 @@
     "bedrooms": 4,
     "postcode": "SW4",
     "dateAdded": "2024-09-08",
-    "description": "Spacious bungalow with garden"
+    "description": "Spacious bungalow with garden",
+    "longDescription": "A rare 4-bedroom bungalow in SW4. Boasts a large wraparound garden, grand living room with a fireplace, and a traditional kitchen.",
+    "images": [
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800",
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800",
+      "https://images.unsplash.com/photo-1600607687940-47a04b697a33?w=800",
+      "https://images.unsplash.com/photo-1600585154542-49a23a722e1d?w=800",
+      "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?w=800"
+    ],
+    "floorPlan": "https://wcs.smartdraw.com/floor-plan/img/floor-plan-marketing.png"
   },
   {
     "id": 4,
@@ -33,7 +69,19 @@
     "bedrooms": 3,
     "postcode": "SE10",
     "dateAdded": "2024-09-05",
-    "description": "Well-maintained property near schools"
+    "description": "Well-maintained property near schools",
+    "longDescription": "Perfectly positioned for families in SE10. Features a bright lounge, three comfortable bedrooms, and a modern family bathroom.",
+    "images": [
+      "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=800",
+      "https://images.unsplash.com/photo-1501183638710-841dd1904471?w=800",
+      "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?w=800",
+      "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800",
+      "https://images.unsplash.com/photo-1472224311454-d22f1ee16bb4?w=800",
+      "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=800",
+      "https://images.unsplash.com/photo-1430285561322-7808604715df?w=800",
+      "https://images.unsplash.com/photo-1464146072230-91cabc968266?w=800"
+    ],
+    "floorPlan": "https://wcs.smartdraw.com/floor-plan/img/floor-plan-marketing.png"
   },
   {
     "id": 5,
@@ -42,7 +90,19 @@
     "bedrooms": 1,
     "postcode": "E14",
     "dateAdded": "2024-09-01",
-    "description": "Compact flat ideal for first-time buyers"
+    "description": "Compact flat ideal for first-time buyers",
+    "longDescription": "Stylish 1-bedroom flat in E14. Efficient open-plan design with modern kitchenette and large windows. Moments from Canary Wharf.",
+    "images": [
+      "https://images.unsplash.com/photo-1502672023488-70e25813ef83?w=800",
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800",
+      "https://images.unsplash.com/photo-1460317442991-0ec209397118?w=800",
+      "https://images.unsplash.com/photo-1499916078039-922301b0eb9b?w=800",
+      "https://images.unsplash.com/photo-1505691938895-1758d7eaa511?w=800"
+    ],
+    "floorPlan": "https://wcs.smartdraw.com/floor-plan/img/floor-plan-marketing.png"
   },
   {
     "id": 6,
@@ -51,7 +111,19 @@
     "bedrooms": 4,
     "postcode": "N15",
     "dateAdded": "2024-08-28",
-    "description": "Large family home with parking"
+    "description": "Large family home with parking",
+    "longDescription": "Four double bedrooms spread over two floors in N15. Expansive modern kitchen-diner, private driveway, and south-facing garden.",
+    "images": [
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800",
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800",
+      "https://images.unsplash.com/photo-1600607687940-47a04b697a33?w=800",
+      "https://images.unsplash.com/photo-1600585154542-49a23a722e1d?w=800",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
+      "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?w=800"
+    ],
+    "floorPlan": "https://wcs.smartdraw.com/floor-plan/img/floor-plan-marketing.png"
   },
   {
     "id": 7,
@@ -60,6 +132,18 @@
     "bedrooms": 2,
     "postcode": "W1",
     "dateAdded": "2024-08-25",
-    "description": "Stylish flat in a prime location"
+    "description": "Stylish flat in a prime location",
+    "longDescription": "Luxurious 2-bedroom flat in W1. Recently renovated with oak flooring, designer lighting, and a sleek modern kitchen.",
+    "images": [
+      "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?w=800",
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800",
+      "https://images.unsplash.com/photo-1600607687940-47a04b697a33?w=800",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=800",
+      "https://images.unsplash.com/photo-1560448204-61dc36dc98b8?w=800",
+      "https://images.unsplash.com/photo-1527359443443-84a18acc6121?w=800"
+    ],
+    "floorPlan": "https://wcs.smartdraw.com/floor-plan/img/floor-plan-marketing.png"
   }
 ]
